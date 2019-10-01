@@ -65,5 +65,36 @@ print("round(3.6)", round(3.6))  # 3.7
 print("round(3.77, 1) =", round(3.77, 1))  # 3.78
 print()
 
+# Comparisons: (return boolean values)
+# Equal:            3 == 2
+# Not Equal:        3 != 2
+# Greater Than:     3 > 2
+# Less Than:        3 < 2
+# Greater or Equal: 3 >= 2
+# Less or Equal:    3 <= 2
+
+# change num_1 and num_2 to test different cases.
+num_1 = 1
+num_2 = 2
+
+print(f"{num_1} == {num_2}:", num_1 == num_2)
+print(f"{num_1} != {num_2}:", num_1 != num_2)
+print(f"{num_1} > {num_2}:", num_1 > num_2)
+print(f"{num_1} < {num_2}:", num_1 < num_2)
+print(f"{num_1} >= {num_2}:", num_1 >= num_2)
+print(f"{num_1} <= {num_2}:", num_1 <= num_2)
+print()
+
+# Casting string to int.
+print("Casting string to int:")
+num_1 = "100"
+num_2 = "500"
+print(f"Before casting {num_1} + {num_2} =", num_1+num_2)
+
+num_1 = int(num_1)
+num_2 = int(num_2)
+print(f"After casting {num_1} + {num_2} =", num_1+num_2)
+
+
 
 
