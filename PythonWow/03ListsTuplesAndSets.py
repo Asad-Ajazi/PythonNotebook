@@ -155,7 +155,7 @@ tuple_1 = ('a', 'b', 'c', 'd')
 tuple_2 = tuple_1
 print('tuple_1 =', tuple_1)
 print('tuple_2 =', tuple_2)
-
+print()
 # changing a tuple will break all code after.
 # tuple_1[0] = 'G'
 
@@ -164,5 +164,26 @@ print('tuple_2 =', tuple_2)
 # print(tuple_2)
 
 # ---------------------------------------------------------------------
+# SETS, are unordered and have no duplicates. {} braces
+print('------------------------------------------------')
+print('SETS')
 
+set_courses = {'English', 'English', 'Maths', 'Science'}
+print('Duplicates removed and result order can change', set_courses)
+print()
+
+# membership test - to check if a value is part of a set.
+# (sets more efficient) to check compared to list/tuple
+print('Science in set:', 'Science' in set_courses)
+print()
+
+# Sets can determine values that they do or don't share with other sets.
+set_courses_2 = {'English', 'Art', 'Maths', 'IT'}
+
+# check commonality using the intersection method.
+print('Courses in common (intersection):', set_courses.intersection(set_courses_2))
+print('Courses not in common (difference):', set_courses.difference(set_courses_2))
+
+# combining different sets.
+print('Combine sets (union):', set_courses.union(set_courses_2))
 
