@@ -186,4 +186,22 @@ print('Courses not in common (difference):', set_courses.difference(set_courses_
 
 # combining different sets.
 print('Combine sets (union):', set_courses.union(set_courses_2))
+print()
+# ---------------------------------------------------------------------------
+# Creating empty list/tuples/sets
+print('-------------------------------------------')
+print('Creating empty lists/tuples/sets')
+print()
+
+# Empty Lists
+empty_list = []
+empty_list = list()
+
+# Empty Tuples
+empty_tuple = ()
+empty_tuple = tuple()
+
+# Empty Sets
+empty_set = {}  # This is actually a dictionary, not a set.
+empty_set = set()
 
