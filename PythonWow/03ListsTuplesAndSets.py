@@ -1,6 +1,6 @@
 # Lists, Tuples and Sets in Python
 
-# Create a LIST
+# Create a LIST (Lists are mutable and can be changed)
 courses = ['English', 'Maths', 'Science', 'History']
 print(courses)
 
@@ -123,3 +123,46 @@ print()
 new_courses_list = course_str.split(' - ')
 print('String converted back to a list: ')
 print(new_courses_list)
+print()
+# ----------------------------------------------------------------
+
+# Tuples (tuples are immutable and cannot be changed directly)
+print('------------------------------------')
+print('Understanding TUPLES')
+print()
+print('List vs Tuple \n')
+
+# Mutable list [] brackets
+print('LIST')
+
+# list vs tuple examples
+list_1 = ['a', 'b', 'c']
+list_2 = list_1
+print('Setting list_2 = list_1')
+
+# a change in list_1 will always result in a change in list_2
+print('List_1 =', list_1)
+print('List_2 =', list_2)
+print('Changing value in list_1 will always change list_2:')
+list_1[0] = 'z'
+print('List_1 after change =', list_1)
+print('List_2 after change =', list_2)
+
+print()
+# TUPLES, Immutable tuple () brackets
+print('TUPLES \n')
+tuple_1 = ('a', 'b', 'c', 'd')
+tuple_2 = tuple_1
+print('tuple_1 =', tuple_1)
+print('tuple_2 =', tuple_2)
+
+# changing a tuple will break all code after.
+# tuple_1[0] = 'G'
+
+# if tuple_2 is printed an object does not support assignment error occurs
+# print(tuple_1)
+# print(tuple_2)
+
+# ---------------------------------------------------------------------
+
+
