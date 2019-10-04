@@ -16,7 +16,7 @@ print('Value at index -1 (last item) =', courses[-1])
 # getting a range of values from a list [0:2] (start index, end index (but not including))
 print('\nRange of values:')
 print('[0:2]', courses[0:2])
-print('Start to index 3 [:3] =  ', courses[:3])
+print('Start to index 3 [:3] =  ', courses[:3])  # [0, 1, 2]
 print('Start index to end [2:] =', courses[2:])
 print('Last 2 items [:-2] =     ', courses[:-2])
 print()
@@ -69,8 +69,10 @@ print('Sorted alphabetically', courses, '\n')
 
 nums = [5, 2, 1, 3, 4]
 print('Unsorted list of numbers:         ', nums)
+
 nums.sort()
 print('Numbers sorted in ascending order:', nums)
+
 nums.sort(reverse=True)
 print('sort(reverse=True) to sort descending:', nums, '\n')
 
@@ -100,13 +102,13 @@ for course in courses:
     print(course)
 print()
 
-# using enumerate function to get index and value.
+# using enumerate function to get index and value. [0, 1, 2, 3, 4]
 print('Using enumerate to show the index:')
 for index, course in enumerate(courses):
     print('Index:', index, ', Value =', course)
 print()
 
-# using enumerate to change start value, 1 instead of 0.
+# using enumerate to change start value, 1 instead of 0. [1, 2, 3, 4, 5]
 print('Change starting index to 1 instead of 0:')
 for index, course in enumerate(courses, start=1):
     print('Index:', index, ', Value =', course)
@@ -143,10 +145,16 @@ print('Setting list_2 = list_1')
 # a change in list_1 will always result in a change in list_2
 print('List_1 =', list_1)
 print('List_2 =', list_2)
-print('Changing value in list_1 will always change list_2:')
+print()
+
+print('Changing value in list_1 will always change list_2 (Same for reverse):')
 list_1[0] = 'z'
-print('List_1 after change =', list_1)
-print('List_2 after change =', list_2)
+print('List_1 after change on list_1 =', list_1)
+print('List_2 after change on list_1 =', list_2)
+# Changing value in list 2 only.
+list_2[1] = 'p'
+print('List_1 after change on list_2 =', list_1)
+print('List_2 after change on list_2 =', list_2)
 
 print()
 # TUPLES, Immutable tuple () brackets
@@ -169,22 +177,23 @@ print('------------------------------------------------')
 print('SETS')
 
 set_courses = {'English', 'English', 'Maths', 'Science'}
-print('Duplicates removed and result order can change', set_courses)
+print('Duplicates removed and result order can change (be random)', set_courses)
 print()
 
 # membership test - to check if a value is part of a set.
 # (sets more efficient) to check compared to list/tuple
+# in keyword
 print('Science in set:', 'Science' in set_courses)
 print()
 
 # Sets can determine values that they do or don't share with other sets.
 set_courses_2 = {'English', 'Art', 'Maths', 'IT'}
 
-# check commonality using the intersection method.
+# check commonality using the intersection method / difference method
 print('Courses in common (intersection):', set_courses.intersection(set_courses_2))
 print('Courses not in common (difference):', set_courses.difference(set_courses_2))
 
-# combining different sets.
+# combining different sets. NO DUPLICATES in sets.
 print('Combine sets (union):', set_courses.union(set_courses_2))
 print()
 # ---------------------------------------------------------------------------

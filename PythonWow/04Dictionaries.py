@@ -30,6 +30,7 @@ print()
 # using the update method to update multiple values at a time.
 print('Using the update() method to update multiple values')
 print('Before update:', student)
+# Can change values and also add new ones.
 student.update({'name': 'Dan', 'age': 34, 'is_alive': True})
 print('After update:', student)
 print()
@@ -48,7 +49,7 @@ print(student)
 print('Phone number removed was:', phone)
 print()
 
-# looping through keys/ values of a dictionary.
+# looping through keys/ values of a dictionary. keys/values/items
 print('Number of keys in Dict:', len(student))
 print('Print Keys:', student.keys())
 print('Print values:', student.values())
@@ -61,6 +62,7 @@ for key in student:
     print(key)
 print()
 
+# items() method to loop through keys and values
 print('Printing keys and values using items() method:')
 for key, value in student.items():
     print(key, ':', value)
