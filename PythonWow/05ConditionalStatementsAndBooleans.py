@@ -107,7 +107,7 @@ print()
 # Any empty mapping. For example, {}.
 # ^use these to evaluate if strings, lists etc are empty
 
-condition = None
+condition = None  # any false value listed above. Will result in false
 
 if condition:
     print('Evaluated to True')
