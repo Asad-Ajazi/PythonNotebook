@@ -38,18 +38,18 @@ random_course = random.choice(courses)
 print(random_course)
 
 import math
-# convert degrees to radians
+# convert 90 degrees to radians, then the sin
 rads = math.radians(90)
 print(math.sin(rads))
 print()
 
 import datetime
 import calendar
-# todays date
+# today's date
 today = datetime.date.today()
 print(today)
 
-# checks for leap year
+# checks for leap year using calendar module.
 print(calendar.isleap(2019))
 print(calendar.isleap(2020))
 print()
@@ -61,3 +61,6 @@ print(current_working_directory)
 
 # find location of os module. directory
 print(os.__file__)
+
+# import antigravity
+# this will open a web comic in the browser.
