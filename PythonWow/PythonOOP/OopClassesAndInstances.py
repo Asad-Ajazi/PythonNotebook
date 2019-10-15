@@ -3,7 +3,7 @@
 # attributes/methods
 
 # employee class
-
+# regular methods automatically take the instance (self)
 
 class Employee:
 
@@ -27,6 +27,11 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)  # class variable raise_amount
         # use self to differentiate changes, or class name to change for all.
+
+    # adding a decorator to take a class instead of instance as first argument
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_amount = amount
 
 
 # create and set variables for an object using __init__  (the constructor)
@@ -68,7 +73,7 @@ print(emp_1.raise_amount)
 print(emp_2.raise_amount)
 
 print('raise for instance emp_1')
-emp_1.raise_amount = 1.2
+emp_1.raise_amount = 1.2  # changed raise for emp1
 # creates a raise_amount attribute to emp_1 after assignment
 print(emp_1.__dict__)
 print(Employee.raise_amount)
@@ -78,3 +83,15 @@ print()
 
 # number of employees, add 1 each time an instance is created.
 print('Number of employees: {}'.format(Employee.num_of_emps))
+print()
+
+# a class method, but does not effect the previous instance amount set
+Employee.set_raise_amount(1.01)
+# is the same as -- Employee.raise_amount = 1.01
+print(Employee.raise_amount)
+print(emp_1.raise_amount)
+print(emp_2.raise_amount)
+print()
+
+
+# https://www.youtube.com/watch?v=rq8cL2XMM5M&t=6s
