@@ -1,0 +1,2 @@
+Old content done years ago. Relearning python in new repository.
+This will be used as reference.
