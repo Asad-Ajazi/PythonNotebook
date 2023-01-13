@@ -15,7 +15,7 @@ print()
 print('Using the .get method to prevent key not found error.')
 print('Print Name:', student.get('name'))
 print('Print height:', student.get('height'))
-print('Print height with custom:', student.get('height', 'Custom default value, key not found.'))
+print('Print height with custom:', student.get('height', 'Custom default value, key not found.')) #set default value if not found
 print()
 
 # adding a new entry to the dictionary

@@ -62,7 +62,7 @@ print()
 # round(number, digits to round to) to the nearest integer value:
 print("Rounding numbers to desired length:")
 print("round(3.6)", round(3.6))  # 3.7
-print("round(3.77, 1) =", round(3.77, 1))  # 3.78
+print("round(3.77, 1) =", round(3.77, 1))  # 3.78? actually 3.8
 print()
 
 # Comparisons: (return boolean values)

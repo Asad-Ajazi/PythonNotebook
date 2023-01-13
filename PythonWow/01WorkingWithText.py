@@ -25,9 +25,11 @@ print(message[6:])
 
 # casing
 print(message.lower())
-print(message.upper())
+print(message.upper(),"asdsad")
 
-# counting char or substring within string
+# counting the number of occurances of a char or substring in a string.
+print("this is o")
+print(message.count("o"))
 print(message.count("l"))
 print(message.count("Hello"))
 

@@ -71,7 +71,7 @@ else:
 
 print()  # spacing.
 
-# is keyword to check for same object.
+# is keyword to check for same object. not the same as ==
 print('using the "is" keyword to check for the same object')
 
 a = [1, 2, 3]
